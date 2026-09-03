@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Fanta Auction">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="stylesheet" href="style.css">
+<title>Fanta Auction</title>
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">FANTACALCIO</div>
+      <h1>Fanta Auction</h1>
+    </div>
+    <div class="count-box"><span id="takenCount">0</span><small>presi</small></div>
+  </header>
+
+  <nav class="role-tabs" aria-label="Ruoli">
+    <button class="role active" data-role="attaccanti">Attaccanti</button>
+    <button class="role disabled" type="button">Portieri</button>
+    <button class="role disabled" type="button">Difensori</button>
+    <button class="role disabled" type="button">Centrocampisti</button>
+  </nav>
+
+  <section class="controls">
+    <div class="search-wrap">
+      <span>⌕</span>
+      <input id="search" type="search" placeholder="Cerca giocatore o squadra" autocomplete="off">
+      <button id="clearSearch" class="icon-btn" aria-label="Cancella ricerca" hidden>×</button>
+    </div>
+    <div class="quick-filters">
+      <button class="filter active" data-filter="all">Tutti</button>
+      <button class="filter" data-filter="available">Disponibili</button>
+      <button class="filter" data-filter="taken">Presi</button>
+    </div>
+  </section>
+
+  <section class="stats-line">
+    <span id="visibleCount">86 giocatori</span>
+    <span class="dot">•</span>
+    <button id="resetView" class="text-btn">Azzera filtri</button>
+  </section>
+
+  <main class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="th-taken">Preso</th>
+          <th data-sort="name">Giocatore <span class="sort-indicator"></span></th>
+          <th data-sort="team">Squadra <span class="sort-indicator"></span></th>
+          <th data-sort="xpv">xPV <span class="sort-indicator"></span></th>
+          <th data-sort="pca">PCA <span class="sort-indicator active-sort">↓</span></th>
+          <th data-sort="pma">PMA <span class="sort-indicator"></span></th>
+          <th class="th-note">Note</th>
+        </tr>
+      </thead>
+      <tbody id="playerBody"></tbody>
+    </table>
+  </main>
+
+  <footer class="bottom-bar">
+    <span>Dati da registrazione • ordine originale</span>
+    <span id="saveState">Salvataggio automatico</span>
+  </footer>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
