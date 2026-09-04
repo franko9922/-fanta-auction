@@ -962,7 +962,7 @@ const PLAYER_DATA = [
   {
     "id": 97,
     "name": "Milinkovic-...",
-    "team": "LAZIO",
+    "team": "NAPOLI",
     "xpv": 60,
     "pca": 9,
     "pma": 4,
@@ -1041,7 +1041,7 @@ const PLAYER_DATA = [
   },
   {
     "id": 105,
-    "name": "Stankovic E.",
+    "name": "Stankovic F.",
     "team": "VENEZIA",
     "xpv": 70,
     "pca": 2,
@@ -1291,7 +1291,7 @@ const PLAYER_DATA = [
   },
   {
     "id": 130,
-    "name": "Bieve",
+    "name": "Bleve",
     "team": "LECCE",
     "xpv": 20,
     "pca": 1,
@@ -1352,7 +1352,7 @@ const PLAYER_DATA = [
   {
     "id": 136,
     "name": "Lezzerini",
-    "team": "VENEZIA",
+    "team": "FIORENTINA",
     "xpv": 10,
     "pca": 0,
     "pma": 1,
@@ -1871,7 +1871,7 @@ const PLAYER_DATA = [
   },
   {
     "id": 188,
-    "name": "Dekhi",
+    "name": "Doekhi",
     "team": "LAZIO",
     "xpv": 80,
     "pca": 5,
@@ -2012,7 +2012,7 @@ const PLAYER_DATA = [
   {
     "id": 202,
     "name": "Koulierakis",
-    "team": "BOLOGNA",
+    "team": "AS ROMA",
     "xpv": 60,
     "pca": 4,
     "pma": 1,
@@ -2122,7 +2122,7 @@ const PLAYER_DATA = [
   {
     "id": 213,
     "name": "Leysen F.",
-    "team": "VENEZIA",
+    "team": "SASSUOLO",
     "xpv": 70,
     "pca": 3,
     "pma": 1,
@@ -2312,7 +2312,7 @@ const PLAYER_DATA = [
   {
     "id": 232,
     "name": "Smolcic I.",
-    "team": "LAZIO",
+    "team": "COMO",
     "xpv": 60,
     "pca": 2,
     "pma": 1,
@@ -2415,7 +2415,7 @@ const PLAYER_DATA = [
     "team": "VENEZIA",
     "xpv": 70,
     "pca": 2,
-    "pma": "-",
+    "pma": 1,
     "originalIndex": 241,
     "role": "difensori"
   },
@@ -2472,7 +2472,7 @@ const PLAYER_DATA = [
   {
     "id": 248,
     "name": "Britschgi",
-    "team": "UDINESE",
+    "team": "PARMA",
     "xpv": 60,
     "pca": 1,
     "pma": 1,
@@ -2662,7 +2662,7 @@ const PLAYER_DATA = [
   {
     "id": 267,
     "name": "Zè Pedro",
-    "team": "FROSINONE",
+    "team": "CAGLIARI",
     "xpv": 60,
     "pca": 1,
     "pma": 1,
@@ -2852,7 +2852,7 @@ const PLAYER_DATA = [
   {
     "id": 286,
     "name": "Marin R.",
-    "team": "ATALANTA",
+    "team": "NAPOLI",
     "xpv": 50,
     "pca": 1,
     "pma": 1,
@@ -3002,7 +3002,7 @@ const PLAYER_DATA = [
   {
     "id": 301,
     "name": "Carboni F.",
-    "team": "FROSINONE",
+    "team": "PARMA",
     "xpv": 40,
     "pca": 1,
     "pma": 1,
@@ -3031,7 +3031,7 @@ const PLAYER_DATA = [
   },
   {
     "id": 304,
-    "name": "Haps",
+    "name": "Sagrado",
     "team": "VENEZIA",
     "xpv": 30,
     "pca": 1,
@@ -3072,7 +3072,7 @@ const PLAYER_DATA = [
   {
     "id": 308,
     "name": "Pieragnolo",
-    "team": "FROSINONE",
+    "team": "SASSUOLO",
     "xpv": 30,
     "pca": 1,
     "pma": 1,
@@ -3142,7 +3142,7 @@ const PLAYER_DATA = [
   {
     "id": 315,
     "name": "Akpoguma",
-    "team": "GENOA",
+    "team": "FROSINONE",
     "xpv": 40,
     "pca": 0,
     "pma": 1,
@@ -3242,7 +3242,7 @@ const PLAYER_DATA = [
   {
     "id": 325,
     "name": "Mazzocchi",
-    "team": "NAPOLI",
+    "team": "VENEZIA",
     "xpv": 20,
     "pca": 0,
     "pma": 1,
@@ -3292,7 +3292,7 @@ const PLAYER_DATA = [
   {
     "id": 330,
     "name": "Diawara S.",
-    "team": "UDINESE",
+    "team": "AC MILAN",
     "xpv": 10,
     "pca": 0,
     "pma": 1,
@@ -3301,7 +3301,7 @@ const PLAYER_DATA = [
   },
   {
     "id": 331,
-    "name": "Marinucci",
+    "name": "Marianucci",
     "team": "NAPOLI",
     "xpv": 10,
     "pca": 0,
@@ -3332,7 +3332,7 @@ const PLAYER_DATA = [
   {
     "id": 334,
     "name": "Goglichidze",
-    "team": "SASSUOLO",
+    "team": "MONZA",
     "xpv": 30,
     "pca": 0,
     "pma": "-",
@@ -3402,7 +3402,7 @@ const PLAYER_DATA = [
   {
     "id": 341,
     "name": "Calhanoglu",
-    "team": "AC MILAN",
+    "team": "INTER",
     "xpv": 70,
     "pca": 74,
     "pma": 71,
@@ -3582,7 +3582,7 @@ const PLAYER_DATA = [
   {
     "id": 359,
     "name": "Samardzic",
-    "team": "UDINESE",
+    "team": "ATALANTA",
     "xpv": 70,
     "pca": 24,
     "pma": 11,
@@ -3602,7 +3602,7 @@ const PLAYER_DATA = [
   {
     "id": 361,
     "name": "Mastantuo...",
-    "team": "JUVENTUS",
+    "team": "FIORENTINA",
     "xpv": 80,
     "pca": 23,
     "pma": 23,
@@ -3641,7 +3641,7 @@ const PLAYER_DATA = [
   },
   {
     "id": 365,
-    "name": "Alibegovic",
+    "name": "Alajbegovic",
     "team": "JUVENTUS",
     "xpv": 60,
     "pca": 18,
@@ -3665,14 +3665,14 @@ const PLAYER_DATA = [
     "team": "NAPOLI",
     "xpv": 70,
     "pca": 15,
-    "pma": 0,
+    "pma": 8,
     "originalIndex": 366,
     "role": "centrocampisti"
   },
   {
     "id": 368,
     "name": "Ekkelenka...",
-    "team": "JUVENTUS",
+    "team": "UDINESE",
     "xpv": 70,
     "pca": 15,
     "pma": 18,
@@ -3792,7 +3792,7 @@ const PLAYER_DATA = [
   {
     "id": 380,
     "name": "Gaetano",
-    "team": "FIORENTINA",
+    "team": "ATALANTA",
     "xpv": 70,
     "pca": 8,
     "pma": 4,
@@ -4062,7 +4062,7 @@ const PLAYER_DATA = [
   {
     "id": 407,
     "name": "Gandelman",
-    "team": "BOLOGNA",
+    "team": "LECCE",
     "xpv": 70,
     "pca": 3,
     "pma": 1,
@@ -4092,7 +4092,7 @@ const PLAYER_DATA = [
   {
     "id": 410,
     "name": "Unai Gomez",
-    "team": "BOLOGNA",
+    "team": "UDINESE",
     "xpv": 60,
     "pca": 3,
     "pma": 1,
@@ -4140,8 +4140,8 @@ const PLAYER_DATA = [
     "role": "centrocampisti"
   },
   {
-    "id": 415,
-    "name": "Malinovskyi",
+    "id": 532,
+    "name": "Messias",
     "team": "GENOA",
     "xpv": 60,
     "pca": 2,
@@ -4191,7 +4191,7 @@ const PLAYER_DATA = [
   },
   {
     "id": 420,
-    "name": "Traorè Hi.",
+    "name": "Traorè Hj.",
     "team": "GENOA",
     "xpv": 60,
     "pca": 2,
@@ -4241,7 +4241,7 @@ const PLAYER_DATA = [
   },
   {
     "id": 425,
-    "name": "Eilertsson",
+    "name": "Ellertsson",
     "team": "VENEZIA",
     "xpv": 70,
     "pca": 2,
@@ -4401,7 +4401,7 @@ const PLAYER_DATA = [
   },
   {
     "id": 441,
-    "name": "Churria",
+    "name": "Ciurria",
     "team": "MONZA",
     "xpv": 60,
     "pca": 1,
@@ -4662,7 +4662,7 @@ const PLAYER_DATA = [
   {
     "id": 467,
     "name": "Koopmein...",
-    "team": "PARMA",
+    "team": "JUVENTUS",
     "xpv": 50,
     "pca": 1,
     "pma": 1,
@@ -4692,7 +4692,7 @@ const PLAYER_DATA = [
   {
     "id": 470,
     "name": "Nicolussi ...",
-    "team": "LAZIO",
+    "team": "PARMA",
     "xpv": 60,
     "pca": 1,
     "pma": 1,
@@ -4792,7 +4792,7 @@ const PLAYER_DATA = [
   {
     "id": 480,
     "name": "Meichtry",
-    "team": "VENEZIA",
+    "team": "GENOA",
     "xpv": 45,
     "pca": 1,
     "pma": 1,
@@ -4801,7 +4801,7 @@ const PLAYER_DATA = [
   },
   {
     "id": 481,
-    "name": "Tourè L.",
+    "name": "Tourè I.",
     "team": "MONZA",
     "xpv": 55.0,
     "pca": 1,
@@ -4812,7 +4812,7 @@ const PLAYER_DATA = [
   {
     "id": 482,
     "name": "Almqvist",
-    "team": "LECCE",
+    "team": "PARMA",
     "xpv": 60,
     "pca": 1,
     "pma": 1,
@@ -4892,7 +4892,7 @@ const PLAYER_DATA = [
   {
     "id": 490,
     "name": "Pellegrini Lo.",
-    "team": "LAZIO",
+    "team": "AS ROMA",
     "xpv": 30,
     "pca": 1,
     "pma": 1,
@@ -4912,7 +4912,7 @@ const PLAYER_DATA = [
   {
     "id": 492,
     "name": "Fitz-Jim",
-    "team": "MONZA",
+    "team": "TORINO",
     "xpv": 60,
     "pca": 0,
     "pma": 1,
@@ -4961,7 +4961,7 @@ const PLAYER_DATA = [
   },
   {
     "id": 497,
-    "name": "Diallo M.",
+    "name": "Diallo O.",
     "team": "PARMA",
     "xpv": 50,
     "pca": 0,
@@ -5032,7 +5032,7 @@ const PLAYER_DATA = [
   {
     "id": 504,
     "name": "Luis Henri...",
-    "team": "FROSINONE",
+    "team": "INTER",
     "xpv": 40,
     "pca": 0,
     "pma": 1,
@@ -5122,7 +5122,7 @@ const PLAYER_DATA = [
   {
     "id": 513,
     "name": "Monteiro J.",
-    "team": "JUVENTUS",
+    "team": "LECCE",
     "xpv": 40,
     "pca": 0,
     "pma": 1,
@@ -5252,7 +5252,7 @@ const PLAYER_DATA = [
   {
     "id": 526,
     "name": "Gagliardini",
-    "team": "MONZA",
+    "team": "CAGLIARI",
     "xpv": 45,
     "pca": 0,
     "pma": "-",
