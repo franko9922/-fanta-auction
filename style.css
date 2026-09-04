@@ -80,3 +80,17 @@ tbody tr.taken td:nth-child(1),tbody tr.taken td:nth-child(2){background:var(--t
 @media(max-width:700px){
   .bottom-bar{flex-direction:column}
 }
+
+
+.player-mark {
+  display: inline-block;
+  white-space: nowrap;
+  margin-left: 0.18em;
+  font-size: 0.9em;
+  font-weight: normal;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+.saved-row .player-mark {
+  text-decoration: none;
+}
