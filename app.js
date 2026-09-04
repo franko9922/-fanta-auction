@@ -1,8 +1,9 @@
 const STORAGE_KEY = "fanta-auction-v1";
-const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{"taken":{},"notes":{}}');
+const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{"taken":{},"notes":{},"saved":{}}');
 let state = {
   taken: saved.taken || {},
-  notes: saved.notes || {}
+  notes: saved.notes || {},
+  saved: saved.saved || {}
 };
 let currentFilter = "all";
 let searchTerm = "";
@@ -44,11 +45,12 @@ function render(){
   const list=filtered();
   body.innerHTML="";
   if(!list.length){
-    body.innerHTML='<tr><td colspan="7" class="empty">Nessun giocatore trovato.</td></tr>';
+    body.innerHTML='<tr><td colspan="8" class="empty">Nessun giocatore trovato.</td></tr>';
   }else{
     for(const p of list){
       const tr=document.createElement("tr");
       if(state.taken[p.id]) tr.classList.add("taken");
+      if(state.saved[p.id]) tr.classList.add("saved-row");
       tr.innerHTML=`
         <td class="checkbox-cell">
           <input class="take-box" type="checkbox" aria-label="Segna ${escapeHtml(p.name)} come preso" ${state.taken[p.id]?"checked":""} data-id="${p.id}">
@@ -56,8 +58,11 @@ function render(){
         <td><div class="player">${escapeHtml(p.name)}</div></td>
         <td><div class="team">${escapeHtml(p.team)}</div></td>
         <td class="num">${p.xpv}</td>
-        <td class="num">${p.pca}</td>
-        <td class="num">${p.pma}</td>
+        <td class="num pca-cell">${p.pca}</td>
+        <td class="num pma-cell">${p.pma}</td>
+        <td class="saved-cell">
+          <input class="saved-box" type="checkbox" aria-label="Segna ${escapeHtml(p.name)} come salvato" ${state.saved[p.id]?"checked":""} data-saved-id="${p.id}">
+        </td>
         <td><input class="note-input" type="text" maxlength="200" placeholder="Nota..." value="${escapeAttr(state.notes[p.id]||"")}" data-note-id="${p.id}"></td>`;
       body.appendChild(tr);
     }
@@ -82,6 +87,12 @@ function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":
 function escapeAttr(s){return escapeHtml(s)}
 
 body.addEventListener("change",(e)=>{
+  if(e.target.matches(".saved-box")){
+    const id=e.target.dataset.savedId;
+    state.saved[id]=e.target.checked;
+    save(); render();
+    return;
+  }
   if(e.target.matches(".take-box")){
     const id=e.target.dataset.id;
     state.taken[id]=e.target.checked;

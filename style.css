@@ -34,6 +34,7 @@ table{border-collapse:separate;border-spacing:0;min-width:900px;width:100%;font-
 thead th{position:sticky;top:0;z-index:20;background:var(--head);border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#4b5563;cursor:pointer;white-space:nowrap;box-shadow:0 1px 0 var(--line)}
 thead th.th-taken{cursor:default;text-align:center;width:62px}
 thead th.th-note{cursor:default;width:290px}
+thead th.th-saved{cursor:default;width:72px;min-width:72px;text-align:center}
 tbody td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle;background:#fff}
 tbody tr:last-child td{border-bottom:0}
 tbody tr.taken td{background:var(--taken)}
@@ -42,9 +43,16 @@ tbody tr.taken td:first-child{box-shadow:inset 3px 0 0 var(--taken-border)}
 .take-box{appearance:none;width:22px;height:22px;border:1.5px solid #9ca3af;border-radius:7px;background:#fff;display:inline-grid;place-content:center;cursor:pointer}
 .take-box:checked{background:#111827;border-color:#111827}
 .take-box:checked::after{content:"✓";color:#fff;font-size:14px;font-weight:800;line-height:1}
-.player{font-weight:800;white-space:nowrap}.player-cell{width:180px;min-width:180px}.team-cell{width:118px;min-width:118px}
+.player{font-weight:800;white-space:nowrap}.player-cell{width:99px;min-width:99px}.team-cell{width:53px;min-width:53px}
 .team{font-size:11px;font-weight:700;color:#6b7280;white-space:nowrap}
 .num{text-align:center;font-variant-numeric:tabular-nums;font-weight:700;width:72px}
+.pca-cell{color:#19a7e8}.pma-cell{color:#f07f88}
+.saved-cell{text-align:center;width:72px;min-width:72px}
+.saved-box{appearance:none;width:22px;height:22px;border:1.5px solid #9ca3af;border-radius:7px;background:#fff;display:inline-grid;place-content:center;cursor:pointer}
+.saved-box:checked{background:#111827;border-color:#111827}
+.saved-box:checked::after{content:"✓";color:#fff;font-size:14px;font-weight:800;line-height:1}
+.saved-row td,.saved-row .player,.saved-row .team,.saved-row .num,.saved-row .note-input{font-weight:800;text-decoration:underline}
+.saved-row .note-input{text-decoration:underline;font-weight:800}
 .note-input{width:100%;min-width:250px;border:1px solid #e5e7eb;background:#fafafa;border-radius:8px;padding:7px 9px;outline:none}
 .note-input:focus{border-color:#9ca3af;background:#fff}
 .sort-indicator{font-size:11px;color:#6b7280;margin-left:3px}
@@ -53,7 +61,8 @@ tbody tr.taken td:first-child{box-shadow:inset 3px 0 0 var(--taken-border)}
 
 /* Fixed first columns while the table scrolls horizontally. */
 thead th:nth-child(1), tbody td:nth-child(1){position:sticky;left:0;z-index:12;background:var(--panel)}
-thead th:nth-child(2), tbody td:nth-child(2){position:sticky;left:62px;z-index:11;background:var(--panel);box-shadow:2px 0 0 rgba(229,231,235,.9)}
+thead th:nth-child(2), tbody td:nth-child(2){position:sticky;left:62px;z-index:11;background:var(--panel);box-shadow:2px 0 0 rgba(229,231,235,.9);width:99px;min-width:99px}
+thead th:nth-child(3), tbody td:nth-child(3){width:53px;min-width:53px}
 thead th:nth-child(1), thead th:nth-child(2){background:var(--head);z-index:25}
 tbody tr.taken td:nth-child(1),tbody tr.taken td:nth-child(2){background:var(--taken)}
 
@@ -61,8 +70,8 @@ tbody tr.taken td:nth-child(1),tbody tr.taken td:nth-child(2){background:var(--t
   .table-wrap{margin:0 5px;max-height:calc(100dvh - 305px);min-height:380px}
   table{min-width:950px}
   thead th{top:0}
-  .player-cell{width:175px;min-width:175px}
-  .team-cell{width:118px;min-width:118px}
+  .player-cell{width:99px;min-width:99px}
+  .team-cell{width:53px;min-width:53px}
   .num{width:70px;min-width:70px}
   .note-input{min-width:230px}
 }
