@@ -6,6 +6,7 @@ let state = {
 };
 let currentFilter = "all";
 let searchTerm = "";
+let currentRole = "attaccanti";
 let sortKey = "originalIndex";
 let sortDir = 1;
 
@@ -26,6 +27,7 @@ function save(){
 function filtered(){
   const term = searchTerm.trim().toLowerCase();
   return PLAYER_DATA.filter(p=>{
+    if(p.role !== currentRole) return false;
     const matchesSearch = !term || p.name.toLowerCase().includes(term) || p.team.toLowerCase().includes(term);
     const isTaken = !!state.taken[p.id];
     const matchesFilter = currentFilter==="all" || (currentFilter==="taken" ? isTaken : !isTaken);
