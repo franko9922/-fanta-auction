@@ -96,6 +96,14 @@ body.addEventListener("input",(e)=>{
     saveState.textContent="Salvato";
   }
 });
+document.querySelectorAll(".role").forEach(btn=>btn.addEventListener("click",()=>{
+  currentRole=btn.dataset.role;
+  search.value=""; searchTerm=""; currentFilter="all";
+  sortKey="originalIndex"; sortDir=1;
+  document.querySelectorAll(".role").forEach(b=>b.classList.toggle("active",b===btn));
+  document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.filter==="all"));
+  render();
+}));
 document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{
   currentFilter=btn.dataset.filter;
   document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b===btn));
