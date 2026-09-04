@@ -30,28 +30,29 @@ h1{font-size:25px;line-height:1.1;margin:3px 0 0;font-weight:800}
 .dot{opacity:.6}
 .text-btn{border:0;background:transparent;padding:0;color:#374151;font-weight:700}
 .table-wrap{margin:0 8px;border:1px solid var(--line);border-radius:14px;background:var(--panel);overflow:auto;max-height:calc(100dvh - 300px);min-height:360px;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;box-shadow:0 2px 12px rgba(17,24,39,.04)}
-table{border-collapse:separate;border-spacing:0;min-width:900px;width:100%;font-size:14px}
+table{border-collapse:separate;border-spacing:0;table-layout:fixed;width:760px;min-width:760px;font-size:14px}
 thead th{position:sticky;top:0;z-index:20;background:var(--head);border-bottom:1px solid var(--line);padding:10px 8px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#4b5563;cursor:pointer;white-space:nowrap;box-shadow:0 1px 0 var(--line)}
-thead th.th-taken{cursor:default;text-align:center;width:62px}
-thead th.th-note{cursor:default;width:290px}
-thead th.th-saved{cursor:default;width:72px;min-width:72px;text-align:center}
+thead th.th-taken{cursor:default;text-align:center;width:58px;min-width:58px}
+thead th.th-note{cursor:default;width:220px;min-width:220px}
+thead th.th-saved{cursor:default;width:62px;min-width:62px;text-align:center}
 tbody td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:middle;background:#fff}
 tbody tr:last-child td{border-bottom:0}
 tbody tr.taken td{background:var(--taken)}
 tbody tr.taken td:first-child{box-shadow:inset 3px 0 0 var(--taken-border)}
-.checkbox-cell{text-align:center;width:62px;min-width:62px}
+.checkbox-cell{text-align:center;width:58px;min-width:58px}
 .take-box{appearance:none;width:22px;height:22px;border:1.5px solid #9ca3af;border-radius:7px;background:#fff;display:inline-grid;place-content:center;cursor:pointer}
 .take-box:checked{background:#111827;border-color:#111827}
 .take-box:checked::after{content:"✓";color:#fff;font-size:14px;font-weight:800;line-height:1}
-.player{font-weight:800;white-space:nowrap}.player-cell{width:99px;min-width:99px}.team-cell{width:53px;min-width:53px}
+.player{font-weight:800;white-space:nowrap}.player-cell{width:120px;min-width:120px}.team-cell{width:70px;min-width:70px}
 .team{font-size:11px;font-weight:700;color:#6b7280;white-space:nowrap}
-.num{text-align:center;font-variant-numeric:tabular-nums;font-weight:700;width:72px}
+.num{text-align:center;font-variant-numeric:tabular-nums;font-weight:700;width:62px;min-width:62px}
 .pca-cell{color:#19a7e8}.pma-cell{color:#f07f88}
-.saved-cell{text-align:center;width:72px;min-width:72px}
+.saved-cell{text-align:center;width:62px;min-width:62px}
 .saved-box{appearance:none;width:22px;height:22px;border:1.5px solid #9ca3af;border-radius:7px;background:#fff;display:inline-grid;place-content:center;cursor:pointer}
 .saved-box:checked{background:#111827;border-color:#111827}
 .saved-box:checked::after{content:"✓";color:#fff;font-size:14px;font-weight:800;line-height:1}
 .saved-row td,.saved-row .player,.saved-row .team,.saved-row .num,.saved-row .note-input{font-weight:800;text-decoration:underline}
+.saved-row .player{color:#e53935}
 .saved-row .note-input{text-decoration:underline;font-weight:800}
 .note-input{width:100%;min-width:250px;border:1px solid #e5e7eb;background:#fafafa;border-radius:8px;padding:7px 9px;outline:none}
 .note-input:focus{border-color:#9ca3af;background:#fff}
@@ -61,19 +62,19 @@ tbody tr.taken td:first-child{box-shadow:inset 3px 0 0 var(--taken-border)}
 
 /* Fixed first columns while the table scrolls horizontally. */
 thead th:nth-child(1), tbody td:nth-child(1){position:sticky;left:0;z-index:12;background:var(--panel)}
-thead th:nth-child(2), tbody td:nth-child(2){position:sticky;left:62px;z-index:11;background:var(--panel);box-shadow:2px 0 0 rgba(229,231,235,.9);width:99px;min-width:99px}
-thead th:nth-child(3), tbody td:nth-child(3){width:53px;min-width:53px}
+thead th:nth-child(2), tbody td:nth-child(2){position:sticky;left:58px;z-index:11;background:var(--panel);box-shadow:2px 0 0 rgba(229,231,235,.9);width:120px;min-width:120px}
+thead th:nth-child(3), tbody td:nth-child(3){width:70px;min-width:70px}
 thead th:nth-child(1), thead th:nth-child(2){background:var(--head);z-index:25}
 tbody tr.taken td:nth-child(1),tbody tr.taken td:nth-child(2){background:var(--taken)}
 
 @media(max-width:700px){
   .table-wrap{margin:0 5px;max-height:calc(100dvh - 305px);min-height:380px}
-  table{min-width:950px}
+  table{width:760px;min-width:760px}
   thead th{top:0}
-  .player-cell{width:99px;min-width:99px}
-  .team-cell{width:53px;min-width:53px}
-  .num{width:70px;min-width:70px}
-  .note-input{min-width:230px}
+  .player-cell{width:120px;min-width:120px}
+  .team-cell{width:70px;min-width:70px}
+  .num{width:62px;min-width:62px}
+  .note-input{min-width:200px}
 }
 .bottom-bar{display:flex;justify-content:space-between;gap:10px;padding:10px 13px;color:#6b7280;font-size:11px}
 @media(max-width:700px){
